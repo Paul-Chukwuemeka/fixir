@@ -11,7 +11,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 const DripAnimation = () => {
-  const translateY = useSharedValue(-100);
+  const translateY = useSharedValue(220);
 
   useEffect(() => {
     translateY.value = withRepeat(
