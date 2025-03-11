@@ -33,7 +33,7 @@ const DripAnimation = () => {
       <Animated.Image
         source={require('../../assets/images/dripping 2.png')}
         style={[styles.drip, animatedStyle]}
-        className="w-screen"
+        className="w-screen h-[500px] min-h-1/2 "
       />
     </View>
   );
