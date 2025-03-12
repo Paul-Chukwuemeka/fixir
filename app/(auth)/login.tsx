@@ -17,7 +17,7 @@ const Login = () => {
     >
       <SafeAreaView className='flex-1 justify-between bg-white' >
         <Animated_drip />
-        <View className="pt-8 w-full  px-6  ">
+        <View className="pt-4 w-full  px-6  ">
           <Pressable className='bg-white w-12  rounded-lg justify-center py-3 items-center '
             onPress={() => { navigate.goBack() }}
           >

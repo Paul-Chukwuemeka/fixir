@@ -13,7 +13,7 @@ const SignUp = () => {
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <SafeAreaView className="flex-1 justify-between bg-white">
         <Animated_drip />
-        <View className="w-full px-6  pt-8  ">
+        <View className="w-full px-6  pt-4  ">
           <Pressable
             className="w-12 items-center  justify-center rounded-lg bg-white py-3 "
             onPress={() => {
@@ -72,16 +72,16 @@ const SignUp = () => {
                 placeholder={authMethod == 'phone' ? '(+234)' : 'Email'}
               />
             </View>
-            <Pressable className="my-8 rounded-lg bg-[#0056D2] text-center">
-              <Text className="flex w-full items-center justify-center p-5 text-center font-[Montserrat-Bold] text-xl text-white">
-                Continue
-              </Text>
-            </Pressable>
+            <Pressable className="flex h-fit w-full  my-6 rounded-lg  bg-[#0056D2]">
+            <Link href={'/verification'} className='w-full p-5 text-center flex justify-center items-center'>
+              <Text className='font-bold text-white '>Continue</Text>
+            </Link>
+          </Pressable>
 
             <Text className="p-4 text-center text-xl font-normal">
-              Joined us before?
-              <Link href="/sign_up">
-                <Text className="font-normal text-[#0056D2]">Log In</Text>
+              Joined us before? 
+              <Link href="/login">
+                <Text className="font-normal text-[#0056D2]"> Log In</Text>
               </Link>
             </Text>
           </View>
