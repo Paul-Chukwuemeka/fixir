@@ -7,34 +7,8 @@ import React, { useState, useRef } from 'react';
 
 const verification = () => {
   const navigate = useNavigation();
-  const [otp, setOtp] = useState(["", "", "", ""]);
-  const inputRefs = useRef<(TextInput | null)[]>([]);
-
-interface HandleChange {
-    (text: string, index: number): void;
-}
-
-interface HandleBackspace {
-    (text: string, index: number): void;
-}
-
-const handleChange: HandleChange = (text, index) => {
-    if (text.length > 1) return; // Prevent more than one digit
-
-    const newOtp = [...otp];
-    newOtp[index] = text;
-    setOtp(newOtp);
-
-    if (text && index < otp.length - 1) {
-        inputRefs.current[index + 1]?.focus(); // Move to next input
-    }
-};
-
-const handleBackspace: HandleBackspace = (text, index) => {
-    if (!text && index > 0) {
-        inputRefs.current[index - 1]?.focus(); // Move to previous input
-    }
-};
+  const [otp,setOtp] = useState<string[]>(["", "", "", ""])
+  
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <SafeAreaView className="flex-1 justify-between bg-white">
@@ -52,24 +26,19 @@ const handleBackspace: HandleBackspace = (text, index) => {
             Your trusted repair and tech partner is just a tap away.
           </Text>
         </View>
-        <View className="flex-row justify-center space-x-2">
-      {otp.map((digit, index) => (
-        <TextInput
-          key={index}
-          ref={(el) => (inputRefs.current[index] = el)}
-          value={digit}
-          onChangeText={(text) => handleChange(text, index)}
-          onKeyPress={({ nativeEvent }) => {
-            if (nativeEvent.key === "Backspace") {
-              handleBackspace(digit, index);
-            }
-          }}
-          keyboardType="number-pad"
-          maxLength={1}
-          className="w-12 h-12 text-center text-lg border border-gray-400 rounded"
-        />
-      ))}
-    </View>
+        <View className='w-full px-6 p-4 h-[55%]'>
+        <Text className="font-[Montserrat-SemiBold] text-[34px] text-[#101820]">Verification</Text>
+        <Text className=' font-[400] text-[17px] text-[#101820]'>We've sent some 4 digit code to you</Text>
+        <View>
+            {otp.map((item,index)=>{
+                return(
+                    <TextInput key={index} className='p-4 border'>
+
+                    </TextInput>
+                )
+            })}
+        </View>
+        </View>
       </SafeAreaView>
     </TouchableWithoutFeedback>
   );

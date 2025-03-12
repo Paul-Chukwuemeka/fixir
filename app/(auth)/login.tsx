@@ -31,8 +31,8 @@ const Login = () => {
           </Text>
         </View>
         <View className="h-[58%] w-screen bg-white px-8 py-0">
-          <Text className="font-[Montserrat-Bold] text-[34px]">Login</Text>
-          <Text className=" font-[Montserrat-Regular] text-[#16242b] text-[18px]">Let's get you connected.</Text>
+          <Text className="font-[Montserrat-Bold] text-[34px] text-[#101820]">Login</Text>
+          <Text className=" font-[Montserrat-Regular]  text-[#16242b] text-[18px]">Let's get you connected.</Text>
           <View className='items-center justify-center w-full'>
             <View className='w-full px-4'>
             <View className='p-4 w-full'>
