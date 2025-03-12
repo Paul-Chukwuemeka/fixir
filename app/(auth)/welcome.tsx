@@ -9,7 +9,7 @@ const welcome = () => {
       <Animated_drip />
       <View className="pt-16">
         <Text className=" text-center font-bold text-[35px] text-white">
-          Fyxit
+          Fixxir
         </Text>
         <Text className=" font-[Montserrat-Light ] text-center text-[15px] text-white">
           Your Device deserves the best.
