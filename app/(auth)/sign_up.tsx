@@ -19,7 +19,7 @@ const SignUp = () => {
             onPress={() => {
               navigate.goBack();
             }}>
-            <Material name="keyboard-arrow-left" size={20} color="#0056D2" />
+            <Material name="keyboard-arrow-left" size={22} color="#0056D2" />
           </Pressable>
           <Text className=" text-center text-[35px] font-bold text-white">Fixxir</Text>
           <Text className=" font-[Montserrat-Light ] text-center text-[15px] text-white">

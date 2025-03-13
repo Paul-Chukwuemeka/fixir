@@ -31,15 +31,15 @@ const Login = () => {
           </Text>
         </View>
         <View className="h-[58%] w-screen bg-white px-8 py-0">
-          <Text className="font-[Montserrat-Bold] text-[34px] text-[#101820]">Login</Text>
-          <Text className=" font-[Montserrat-Regular]  text-[#16242b] text-[18px]">Let's get you connected.</Text>
+          <Text className="font-[Montserrat-Bold] text-[34px] text-[#37474F]">Login</Text>
+          <Text className=" font-[400]  text-[#37474F] text-[18px]">Let's get you connected.</Text>
           <View className='items-center justify-center w-full'>
             <View className='w-full px-4'>
             <View className='p-4 w-full'>
               <Text className='font-[Montserrat-SemiBold] text-lg'>Email</Text>
               <View className='flex-row border-b border-[#0f1c22a8]  items-center'>
                 <TextInput className='w-11/12 font-[Montserrat-SemiBold] px-2' placeholder='Your Email' />
-                <Material name='email' size={25} color='#9ca3af' />
+                <Material name='email' size={22} color='#9ca3af' />
               </View>
             </View>
             <View className='w-full p-4'>

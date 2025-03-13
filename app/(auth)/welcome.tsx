@@ -16,8 +16,8 @@ const welcome = () => {
         </Text>
       </View>
       <View className="h-[58%] w-screen bg-white px-6 py-0">
-        <Text className="font-[Montserrat-ExtraBold] text-[34px]">Welcome!</Text>
-        <Text className=" font-[Montserrat-Light ] text-[18px]">Let's get you connected!</Text>
+        <Text className="font-[Montserrat-ExtraBold] text-[34px] text-[#37474F]">Welcome!</Text>
+        <Text className=" font-[Montserrat-Light ] text-[18px] text-[#37474F]">Let's get you connected!</Text>
         <View className="mt-8 flex w-full items-center gap-[14px] ">
           <Pressable className="flex h-fit w-4/5 rounded-lg  bg-[#0056D2]">
             <Link href={'/login'} className='w-full p-5 text-center flex justify-center items-center'>
